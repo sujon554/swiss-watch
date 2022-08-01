@@ -3,3 +3,13 @@
     padding: 10px;
     margin: 0 10px;
 }
+
+
+@media screen and (max-width: 768px) {
+    h3 {
+      font-size: 14px;
+    }
+    h6 {
+        font-size: 10px;
+    }
+  }

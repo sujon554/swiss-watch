@@ -5,3 +5,22 @@
     font-size: 1.2rem;
     text-decoration: none;    
 }
+.border-dark {
+    color: #000223;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 992px) {
+    .navItem {
+      font-size: 13px;
+    margin-left: 0;
+    }
+    .Image {
+        width: 80%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+
+    }
+   
+  }

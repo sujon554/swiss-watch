@@ -20,7 +20,6 @@ const Reviews = () => {
     fetch("https://ancient-citadel-32341.herokuapp.com/reviews")
       .then((res) => res.json())
       .then((data) => setReview(data));
-    console.log(reviews);
   }, []);
   return (
     <div className="review">
@@ -28,7 +27,7 @@ const Reviews = () => {
         <h2 className="mb-5 text-">CLIENTS REVIEWS</h2>
         <Slider {...settings}>
           {reviews.map((review) => (
-            <div key={review._id} review={review}>
+            <div className="mx-2" key={review._id} review={review}>
               <h3>{review.UserName}</h3>
               <h6>{review.ReviewName}</h6>
               <Rating

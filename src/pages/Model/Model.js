@@ -1,12 +1,14 @@
-import React from 'react';
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import Image from "react-bootstrap/Image";
+import about from "../../../src/images/about.jpg";
 
 const Model = () => {
   return (
     <Container className="m-5">
       <h1 className="mb-4">About Us </h1>
       <Row>
-        <Col>
+        <Col md={6} sm={12}>
           <p>
             Most often associated with watches or timepieces made in
             Switzerland, Swiss law considers a watch to be Swiss made if its
@@ -22,11 +24,8 @@ const Model = () => {
             the legal requirements for use of the term "Swiss made" may differ.
           </p>
         </Col>
-        <Col>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Steinhausen_Watch_Swiss_Made.jpg"
-            alt=""
-          />
+        <Col md={6} sm={12}>
+          <Image className="img-fluid rounded" src={about} alt="" />
         </Col>
       </Row>
     </Container>

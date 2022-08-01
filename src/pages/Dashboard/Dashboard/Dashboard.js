@@ -25,7 +25,7 @@ const Dashboard = () => {
       <hr className="new" />
       <Container className="mt-4 mb-5 pb-5">
         <Row>
-          <Col sm={2} xl={2} lg={2}>
+          <Col sm={3} xl={2} lg={2}>
             <div className="pt-5 px-2">
               <Nav className="d-grid me-auto">
                 <NavLink
@@ -91,7 +91,7 @@ const Dashboard = () => {
               </Nav>
             </div>
           </Col>
-          <Col sm={10} xl={10} lg={10}>
+          <Col sm={9} xl={10} lg={10}>
             <div className="menubar px-5 w-100">
               <Switch>
                 <Route exact path={path}>

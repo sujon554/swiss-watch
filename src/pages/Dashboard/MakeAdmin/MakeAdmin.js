@@ -7,6 +7,8 @@ import {
   InputGroup,
   FormControl,
   Container,
+  Row,
+  Col,
 } from "react-bootstrap";
 
 const MakeAdmin = () => {
@@ -45,18 +47,30 @@ const MakeAdmin = () => {
   return (
     <Container>
       <h1>Make Admin</h1>
-
       <Form
         onSubmit={handleAdminSubmit}
         className="d-flex justify-content-center my-5"
       >
-        <InputGroup className="mb-3 w-50">
-          <FormControl onBlur={handleOnBlur} placeholder="Enter E-mail" />
-          <Button variant="success" type="submit">
+
+<Row>
+        <Col sm={12} md={6}>
+        <InputGroup className="mb-3 w-100">
+          <FormControl required onBlur={handleOnBlur} placeholder="Enter E-mail" />
+          
+        </InputGroup>
+        </Col>
+        <Col sm={12} md={6}>
+        <Button variant="success" type="submit">
             Make Admin
           </Button>
-        </InputGroup>
+        </Col>
+      </Row>
+
+        
       </Form>
+      
+
+      
     </Container>
   );
 };

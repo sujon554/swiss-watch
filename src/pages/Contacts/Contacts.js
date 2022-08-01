@@ -1,35 +1,33 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import { Button, Container, Row, Col } from "react-bootstrap";
 import "./Contacts.css";
 const Contacts = () => {
   return (
-    <div className="container my-5">
-      <div className="contacts-container">
-        <div className="contacts">
+    <Container>
+      <Row>
+        <Col className="my-5">
           <h1>Contacts Us</h1>
           <p>
-            {" "}
             <input className="w-50 p-2" placeholder="Enter Name" type="text" />
           </p>
           <p>
-            {" "}
             <input className="w-50 p-2" placeholder="Enter Mail" type="mail" />
           </p>
           <p>
-            {" "}
             <input className="w-50 p-2" placeholder="Subject" type="text" />
           </p>
           <textarea
             className="p-2"
             placeholder="Type your Messese here..."
             id=""
-            cols="45"
+            cols="30"
             rows="10"
           ></textarea>{" "}
           <br />
           <Button className="btn-primary p-3 px-5">Send</Button>
-        </div>
-        <div className="office">
+        </Col>
+
+        <Col className="my-5">
           <h1>Our Office</h1>
           <p>
             We are egarly wants to meet with you. You are most welcome to visit
@@ -48,9 +46,9 @@ const Contacts = () => {
           <h3>E-mail</h3>
           <p>info@nebulas-it.com</p>
           <p>nebulasbd@gmail.com</p>
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

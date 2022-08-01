@@ -33,7 +33,7 @@ const Review = () => {
         </h3>
 
         <Form
-          className="d-flex flex-column w-25 mx-auto"
+          className="d-flex flex-column w-100 mx-auto"
           onSubmit={handleSubmit(onSubmit)}
         >
           <textarea
@@ -59,7 +59,7 @@ const Review = () => {
             {...register("watchRating")}
           />
 
-          <Button className="w-50" variant="success" type="submit">
+          <Button className="w-80" variant="success" type="submit">
             Add Review
           </Button>
         </Form>
