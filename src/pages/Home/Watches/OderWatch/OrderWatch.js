@@ -30,7 +30,7 @@ const OrderWatch = () => {
         }
       });
   };
-
+ 
   return (
     <Container >
       <Row className="py-5">
@@ -41,8 +41,9 @@ const OrderWatch = () => {
           </Link>
         </Col>
         <Col>
+     
           <div className="mb-5">
-            <Image className="fluid" src={singleProduct.img} alt="" />
+            <Image className="img-fluid" src={singleProduct.img} alt="" />
             <h2 className="mt-5">Watch Name {singleProduct.name}</h2>
             <h1 className="my-3">Price: {singleProduct.Price}</h1>
             <p className="mb-5">{singleProduct.Description}</p>
