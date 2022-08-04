@@ -14,7 +14,7 @@ const OrderWatch = () => {
   const { register, handleSubmit } = useForm();
 
   useEffect(() => {
-    fetch(`http://ancient-citadel-32341.herokuapp.com/watches/${id}`)
+    fetch(`https://ancient-citadel-32341.herokuapp.com/watches/${id}`)
       .then((res) => res.json())
       .then((data) => setSingleProduct(data));
   }, []);
