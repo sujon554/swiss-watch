@@ -8,7 +8,7 @@ const Explore = () => {
   const [watches, setWatches] = useState([]);
 
   useEffect(() => {
-    fetch("https://ancient-citadel-32341.herokuapp.com/watches")
+    fetch("https://nameless-shelf-85993.herokuapp.com/watches")
       .then((res) => res.json())
       .then((data) => setWatches(data));
   }, []);
@@ -27,7 +27,7 @@ const Explore = () => {
               />
               <Card.Body>
                 <Card.Title>{watch.name}</Card.Title>
-                <h6>{watch.Price}</h6>
+                <h6>Price: $ {watch.Price}</h6>
                 <Card.Text>{watch.Description}</Card.Text>
 
                 <Rating

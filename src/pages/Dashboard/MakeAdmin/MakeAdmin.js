@@ -20,7 +20,7 @@ const MakeAdmin = () => {
 
   const handleAdminSubmit = (e) => {
     const user = { email };
-    fetch("https://ancient-citadel-32341.herokuapp.com/users/admin", {
+    fetch("https://nameless-shelf-85993.herokuapp.com/users/admin", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

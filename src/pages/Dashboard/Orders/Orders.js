@@ -6,7 +6,7 @@ const Orders = () => {
   const [reload, setReload] = useState(false);
   const [status, setStatus] = useState("Approved");
   useEffect(() => {
-    fetch("https://ancient-citadel-32341.herokuapp.com/allorders")
+    fetch("https://nameless-shelf-85993.herokuapp.com/allorders")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [reload]);
@@ -18,7 +18,7 @@ const Orders = () => {
     );
     if (proceed) {
       setStatus(status);
-      fetch(`https://ancient-citadel-32341.herokuapp.com/updateStatus/${id}`, {
+      fetch(`https://nameless-shelf-85993.herokuapp.com/updateStatus/${id}`, {
         method: "PUT",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ status }),
@@ -40,7 +40,7 @@ const Orders = () => {
       "Are you sure, you want to delete this package?"
     );
     if (proceed) {
-      fetch(`https://ancient-citadel-32341.herokuapp.com/allorders/${id}`, {
+      fetch(`https://nameless-shelf-85993.herokuapp.com/allorders/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

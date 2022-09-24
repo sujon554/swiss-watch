@@ -106,7 +106,7 @@ const useFirebase = () => {
   // save users to mongoDB
   const saveUser = (email, displayName, method) => {
     const user = { email, displayName };
-    fetch("https://ancient-citadel-32341.herokuapp.com/users", {
+    fetch("https://nameless-shelf-85993.herokuapp.com/users", {
       method: method,
       headers: {
         "content-type": "application/json",
@@ -116,7 +116,7 @@ const useFirebase = () => {
   };
 
   useEffect(() => {
-    fetch(`https://ancient-citadel-32341.herokuapp.com/users/${user.email}`)
+    fetch(`https://nameless-shelf-85993.herokuapp.com/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => setAdmin(data.admin));
   }, [user.email]);
