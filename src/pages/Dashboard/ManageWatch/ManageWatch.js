@@ -6,7 +6,7 @@ const ManageWatch = () => {
   const [watches, setWatches] = useState([]);
   // const [reload, setReload] = useState(false);
   useEffect(() => {
-    fetch("https://nameless-shelf-85993.herokuapp.com/watches")
+    fetch("https://swess-server.onrender.com/watches")
       .then((res) => res.json())
       .then((data) => setWatches(data));
   }, []);
@@ -17,7 +17,7 @@ const ManageWatch = () => {
       "Are you sure, you want to delete this Watch?"
     );
     if (proceed) {
-      fetch(`https://nameless-shelf-85993.herokuapp.com/watches/${id}`, {
+      fetch(`https://swess-server.onrender.com/watches/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

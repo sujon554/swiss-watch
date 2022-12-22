@@ -14,7 +14,7 @@ const OrderWatch = () => {
   const { register, handleSubmit } = useForm();
 
   useEffect(() => {
-    fetch(`https://nameless-shelf-85993.herokuapp.com/watches/${id}`)
+    fetch(`https://swess-server.onrender.com/watches/${id}`)
       .then((res) => res.json())
       .then((data) => setSingleProduct(data));
   }, []);
@@ -23,7 +23,7 @@ const OrderWatch = () => {
   const onSubmit = (data) => {
     console.log(data);
     axios
-      .post("https://nameless-shelf-85993.herokuapp.com/allorders", data)
+      .post("https://swess-server.onrender.com/allorders", data)
       .then((res) => {
         if (res.data.insertedId) {
           alert("Package Booked Successfully!");

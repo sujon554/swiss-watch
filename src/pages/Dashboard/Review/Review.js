@@ -10,7 +10,7 @@ const Review = () => {
 
   const onSubmit = (data) => {
     axios
-      .post("https://nameless-shelf-85993.herokuapp.com/reviews", data)
+      .post("https://swess-server.onrender.com/reviews", data)
       .then((res) => {
         if (res.data.insertedId) {
           // alert("Package Addeded Successfully!");

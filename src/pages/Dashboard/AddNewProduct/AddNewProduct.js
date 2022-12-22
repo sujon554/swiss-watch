@@ -10,7 +10,7 @@ const AddNewProduct = () => {
 
   const onSubmit = (data) => {
     axios
-      .post("https://nameless-shelf-85993.herokuapp.com/watches", data)
+      .post("https://swess-server.onrender.com/watches", data)
       .then((res) => {
         if (res.data.insertedId) {
           // alert("Package Addeded Successfully!");

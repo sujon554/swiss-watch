@@ -17,7 +17,7 @@ const Reviews = () => {
   };
 
   useEffect(() => {
-    fetch("https://nameless-shelf-85993.herokuapp.com/reviews")
+    fetch("https://swess-server.onrender.com/reviews")
       .then((res) => res.json())
       .then((data) => setReview(data));
   }, []);

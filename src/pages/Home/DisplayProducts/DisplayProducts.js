@@ -7,7 +7,7 @@ const DisplayProducts = () => {
   const [watches, setWatches] = useState([]);
 
   useEffect(() => {
-    fetch("https://nameless-shelf-85993.herokuapp.com/watches")
+    fetch("https://swess-server.onrender.com/watches")
       .then((res) => res.json())
       .then((data) => setWatches(data));
   }, []);
